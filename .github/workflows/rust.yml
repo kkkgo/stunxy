@@ -21,6 +21,6 @@ jobs:
     - name: upload
       uses: actions/upload-artifact@v3
       with:
-          name: tunxy
-          path: ./target/x86*/release/tunxy
+          name: stunxy
+          path: ./target/x86*/release/stunxy
       
