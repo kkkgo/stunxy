@@ -17,6 +17,6 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build
-      run: docker run -v "$(pwd)":/home/rust/src messense/rust-musl-cross:x86_64-musl cargo build --release
+      run: docker run -v "$(pwd)":/src ghcr.io/recmo/rust-static-build:1.63-x86_64 cargo build --release
     - name: Run tests
       run: tree
